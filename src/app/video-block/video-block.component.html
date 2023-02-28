@@ -1,44 +1,39 @@
 <div class="video_block">
+
+
+    <div *ngFor="let item of block_video" class="block2_header ">
+        <h2 class="font-700 fs-28_33">{{item.header}}</h2> </div>
     <div class="sub_video_block ">
-        <div class="left_block">
-            <h1>
-                Зачем инвестировать в IPO на KASE?
-            </h1>
-            <video>
-                <source url="https://youtu.be/HS8lV1jAPho">
-            </video>
-            <h3>
-                KASE - ваш партнер уверенного роста!
-            </h3>
-            <label>
-                Казахстанская фондовая биржа (KASE) - это площадка привлечения финансирования<br>для всех казахстанских
-                компаний, и особенно - для МСБ и растущих предприятий. KASE<br>сегодня – это универсальная площадка, 58
-                членов биржи, 147 компаний-эмитентов,<br> 382 корпоративных ценных бумаг. Добро пожаловать на KASE!
-            </label>
+       
+        
+        <div class="left_block font-700">
+        <div *ngFor="let item of block_video"> 
+            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/HS8lV1jAPho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h3 class="fs-16_24">{{item.sub_header}}</h3> 
+            <span class="font-300 fs-15-25">Казахстанская фондовая биржа (KASE) - это площадка привлечения финансирования для всех казахстанских компаний, и особенно - для МСБ и растущих предприятий. KASE сегодня – это универсальная площадка, 58 членов биржи, 147 компаний-эмитентов, 382 корпоративных ценных бумаг. Добро пожаловать на KASE!</span> 
+            
+        </div>
         </div>
 
-        <div class="right_block">
+        <div class="right_block font-700">
+            <div *ngFor="let item of investors">
+                <span class="fs-18_25">{{item.name}}</span>
+                <ul *ngFor="let i of item.title" class="font-300 fs-18_25">
+                    <li>{{i.info}}</li>
+                    <li>{{i.info1}}</li>
+                </ul>
+                <span class="fs-18_25">{{item.name2}}</span> 
+                <ul *ngFor="let i of item.title2" class="font-300 fs-18_25">
+                    <li>{{i.info2}}</li>
+                    <li>{{i.info3}}</li> 
+                    <li>{{i.info4}}</li>
+                </ul>
+        
+            </div>
 
-            <h2 class="font 500 fs-18_40">Инвестируя в IPO на KASE, у вас появляется<br>возможность:</h2>
-
-            <li>стать совладельцем успешных, стабильно <br>развивающихся казахстанских компаний,<br> выходящих на IPO
-            </li>
-            <li>получить доступ к другим инструментам,<br> торгуемым на KASE</li>
-            <h2>Эти возможности позволят вам:</h2>
-            <li>создать источник дополнительного<br>дохода</li>
-            <li>сформировать капитал на долгосрочные<br>цели (образование, пенсия)</li>
-            <li>внести свой вклад в развитие бизнеса<br>отдельных компаний и экономики страны
-            </li>
         </div>
     </div>
 
 
-    <div *ngFor="let item of investors">
-        <span>{{item.name}}</span>
-        <ul *ngFor="let i of item.title">
-<li>{{i.info}}</li>
-<li>{{i.info1}}</li>
-        </ul>
-
-    </div>
+   
 </div>
