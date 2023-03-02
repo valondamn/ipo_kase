@@ -10,7 +10,8 @@ import { SharedModule } from './shared/shared.module';
 import { VideoBlockComponent } from './video-block/video-block.component';
 import { WhatNeedToKnowComponent } from './what-need-to-know/what-need-to-know.component';
 import { HowToJoinComponent } from './how-to-join/how-to-join.component';
-import { EventsComponent } from './events/events.component'; 
+import { EventsComponent } from './events/events.component';
+import { AttentionComponent } from './attention/attention.component'; 
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { EventsComponent } from './events/events.component';
     VideoBlockComponent,
     WhatNeedToKnowComponent,
     HowToJoinComponent,
-    EventsComponent
+    EventsComponent,
+    AttentionComponent
   ],
   imports: [
     SharedModule,
