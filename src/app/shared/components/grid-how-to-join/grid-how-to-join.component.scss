@@ -1,0 +1,33 @@
+.header{ 
+    width: 85%; 
+    text-align: left;
+}
+.how_to_join{ 
+    width: 100%; 
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 60px;  
+} 
+
+
+.cards{
+    width: 85%; 
+    height: 100%; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+    text-align: center;   
+    justify-items: center; 
+  } 
+  
+  .card{
+   background-color: #FFFFFF;
+    width: 364px;
+    height: 320px;
+    text-align: center; 
+    border: 1px solid #F3F4F5;
+    border-radius: 12px;
+  }
