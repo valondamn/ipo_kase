@@ -6,7 +6,8 @@
     display: flex; 
     flex-direction: column;
     align-items: center; 
-    padding-top: 60px;
+    padding-top: 60px; 
+    padding-bottom: 60px;
 }
 
 .header{ 
@@ -22,7 +23,6 @@
 
 .sub_attention{   
     width: 80%; 
-    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-end; 

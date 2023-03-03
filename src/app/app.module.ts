@@ -11,7 +11,8 @@ import { VideoBlockComponent } from './video-block/video-block.component';
 import { WhatNeedToKnowComponent } from './what-need-to-know/what-need-to-know.component';
 import { HowToJoinComponent } from './how-to-join/how-to-join.component';
 import { EventsComponent } from './events/events.component';
-import { AttentionComponent } from './attention/attention.component'; 
+import { AttentionComponent } from './attention/attention.component';
+import { UsefulMaterialsComponent } from './useful-materials/useful-materials.component'; 
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AttentionComponent } from './attention/attention.component';
     WhatNeedToKnowComponent,
     HowToJoinComponent,
     EventsComponent,
-    AttentionComponent
+    AttentionComponent,
+    UsefulMaterialsComponent
   ],
   imports: [
     SharedModule,
