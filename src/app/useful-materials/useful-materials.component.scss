@@ -1,51 +1,105 @@
+
+.look_block{ 
+  width: 85%; 
+  height: 310px;
+} 
+.read_block{ 
+  width: 85%; 
+  height: 385px;
+}
+.listen_block{ 
+  width: 85%; 
+ height: 450px;
+}
+
+.sup_grid{ 
+background-color: #f8f9fa;
+}
 .header{ 
-    width: 85%; 
-    text-align: left;
+    width: 100%; 
+    text-align: left; 
+    
 } 
 
+.sub_header{ 
+  margin-top: 4px;
+} 
+
+.description{ 
+  margin-top: 12px;
+} 
+.sub_description{ 
+  margin-top: 24px;
+}
+
+
+
 .look{
-  width: 85%;
+  width: 100%;
   text-align: left;
-  
+  margin-bottom: 30px;
 }
 .sub_look{ 
   border-bottom: 2px solid #038726;
   padding-bottom:  4px;
 }
+
+
 .grid_events{ 
-    width: 100%; 
-    height: 470px;
+    width: 100%;  
+    height: 1401px;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;  
+    gap: 100px;
     padding-top: 60px;   
     background-color: #f8f9fa;
     
 } 
 .cards{
-    width: 85%; 
+    width: 100%; 
     height: 100%; 
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(267px,1fr));
-    padding: 20px;
+  
+    grid-gap: 40px; 
+    text-align: center;   
+    justify-items: center;  
+    
+  }  
+
+  .cards2{
+    width: 100%; 
+    height: 100%; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(364px,1fr));
     grid-gap: 40px;
     text-align: center;   
-    justify-items: center; 
+    justify-items: center;  
     
-  } 
+    
+  }  
+
+  .card2{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 320px;
+    text-align: left;      
+    }  
+
+
+
   .card{
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 320px;
-  text-align: left;    
-
-  
-    
+  text-align: left;      
   }  
 
   .card_description{ 
-    width: 270px;
+    width: 85%;
   }
 
 
@@ -57,5 +111,33 @@
   }
 
 
+  .info{ 
+    display: flex; 
+    flex-direction: row;
+  }  
+  .right_info{  
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+
+.left_info{  
+  width: 55%;
+  display: flex;
+    flex-direction: column;
+}
+
+  .listen{
+    width: 45%; 
+    text-align: center;   
+    justify-items: center;   
+  
+  }
 
 
+
+
+
+
+
+  
