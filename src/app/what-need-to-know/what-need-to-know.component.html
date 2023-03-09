@@ -1,14 +1,56 @@
 <div class="what_need_to_know">
     <div class="sub_what_need_to_know">
 
-        <h2 class="font-700 fs-28_33">Что нужно знать</h2> 
-        <div class="tabs"> 
-        <app-tabs></app-tabs>
+        <h2 class="font-700 fs-28_33">Что нужно знать</h2>
+        <div class="tabs">
+            <div class="season_tabs">
+
+                <div class="season_tab ">
+
+                    <input type="radio" id="tab-1" name="tab-group-1" checked>
+                    <label *ngFor="let item of tabs" for="tab-1" class="font-300 fs-18_252">{{item.text}}</label>
+
+                    <div class="season_content">
+
+                    </div>
+                </div>
+
+                <div class="season_tab">
+                    <div class="sub_season_tab">
+                        <input type="radio" id="tab-2" name="tab-group-1">
+                        <label *ngFor="let item of tabs" for="tab-2" class="font-300 fs-18_252">{{item.text}}</label>
+                    </div>
+
+                    <div class="season_content">
+                        <div *ngFor="let item of tabs">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="season_tab">
+                    <input type="radio" id="tab-3" name="tab-group-1">
+                    <label *ngFor="let item of tabs" for="tab-3" class="font-300 fs-18_252">{{item.text}}</label>
+
+                    <div class="season_content">
+
+
+                    </div>
+                </div>
+                <div class="season_tab">
+                    <input type="radio" id="tab-4" name="tab-group-1">
+                    <label *ngFor="let item of tabs" for="tab-4" class="font-300 fs-18_252">{{item.text}}</label>
+
+                    <div class="season_content">
+
+                    </div>
+                </div>
+
+            </div>
 
         </div>
         <div class="pages">
-            
+
         </div>
     </div>
 </div>
-

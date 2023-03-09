@@ -15,11 +15,15 @@ describe('UsefulMaterialsComponent', () => {
     fixture = TestBed.createComponent(UsefulMaterialsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
+    
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
+
   });
+
+  
 });
 
 

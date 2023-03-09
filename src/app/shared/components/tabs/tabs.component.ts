@@ -1,4 +1,11 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'; 
+interface tabs{
+  info1: any,  
+  info2: any, 
+  info3: any, 
+  info4: any
+
+}
 
 @Component({
   selector: 'app-tabs',
@@ -8,3 +15,5 @@ import { Component } from '@angular/core';
 export class TabsComponent {
 
 }
+
+

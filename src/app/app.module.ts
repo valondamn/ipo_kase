@@ -12,7 +12,8 @@ import { WhatNeedToKnowComponent } from './what-need-to-know/what-need-to-know.c
 import { HowToJoinComponent } from './how-to-join/how-to-join.component';
 import { EventsComponent } from './events/events.component';
 import { AttentionComponent } from './attention/attention.component';
-import { UsefulMaterialsComponent } from './useful-materials/useful-materials.component'; 
+import { UsefulMaterialsComponent } from './useful-materials/useful-materials.component';
+import { ContactsComponent } from './contacts/contacts.component'; 
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { UsefulMaterialsComponent } from './useful-materials/useful-materials.co
     HowToJoinComponent,
     EventsComponent,
     AttentionComponent,
-    UsefulMaterialsComponent
+    UsefulMaterialsComponent,
+    ContactsComponent
   ],
   imports: [
     SharedModule,

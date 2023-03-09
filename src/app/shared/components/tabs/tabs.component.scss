@@ -2,10 +2,14 @@
     position: relative;   
     min-height: 360px; /* This part sucks */
     clear: both;
-    margin: 25px 0;
+    margin: 25px 0;  
+    display: flex;
+    flex-direction: column;
+    gap: 40px;  
   }
   .season_tab {
-    width: 286px;
+    width: 486px; 
+    
   }
   .season_tab label {
     
@@ -18,7 +22,7 @@
   .season_content {
     position: absolute;
     top: 0;
-    left: 286px;
+    left: 400px;
     background: #f1f1f1;
     right: 0;
     bottom: 0;
@@ -29,9 +33,10 @@
     animation: 0.5s ease-out 0s 1 slideInFromTop; 
   }
   [type=radio]:checked ~ label {
-   
+   padding-left: 8px;
     border-left: 2px solid #8bc34a;
-    z-index: 2;
+    z-index: 2; 
+    font-family: MuseoSansCyrl700;
   }
   [type=radio]:checked ~ label ~ .season_content {
     z-index: 1;
